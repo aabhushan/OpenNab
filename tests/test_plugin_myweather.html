@@ -1,0 +1,820 @@
+
+
+<html>
+<head>
+	<title>Forecast for Toulouse / Francazal, France - HAMweather</title>
+<meta NAME="revisit-after" CONTENT="31 days">
+<meta NAME="ROBOTS" CONTENT="ALL">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<meta name="description" content="Local weather forecasts from HAMweather.com. Forecast for " />
+<meta name="keywords" content="current temperature, current weather, daily forecast, radar, weather forecast, local weather forecast, local weather forecasts, Toulouse weather, Toulouse weather forecast, Toulouse,  weather, Toulouse,  weather forecast,hamweather" />
+<link rel="stylesheet" href="/tabs.css" TYPE="text/css" MEDIA="screen">
+<link rel="meta" href="http://hamweather.net/labels.rdf" type="application/rdf+xml" title="ICRA labels" />
+<script LANGUAGE="JavaScript">
+<!--
+function launch(newURL, newName, newFeatures, orgName) {
+  var remote = open(newURL, newName, newFeatures);
+  if (remote.opener == null)
+    remote.opener = window;
+  remote.opener.name = orgName;
+  return remote;
+}
+function OpenWindow(sURL, nw,nh, sOptions) {
+   if (nw<1) {nw=500;}
+   if (nh<1) {nh=300;}
+   if (sOptions == '') { sOptions='screenX=125,left=125,screenY=125,top=125,channelmode=0,dependent=0,directories=no,location=no,menubar=no,scrollbars=yes,status=no,toolbar=no,resizable=no,left=0,top=0,screenX=0,screenY=0';}
+   myRemote2 = launch(sURL, "myRemote2", "height=" + nh + ",width=" + nw + "," + sOptions, "HAMweather_Popup");
+   return false;
+}
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      if (oldonload) {
+        oldonload();
+      }
+      func();
+    }
+  }
+}
+// -->
+</script>
+
+<script language="Javascript">
+<!--
+var currentdate = 0;
+var core = 0;
+function initArray() {
+this.length = initArray.arguments.length;
+  for (var i = 0; i < this.length; i++) {
+  this[i] = initArray.arguments[i];
+  }
+}
+link = new initArray(
+"http://www.hamweather.com/hwwarnings",
+"http://www.hamweather.com/hwcontours",
+"http://www.hamweather.com/",
+"http://www.hamweather.com/hamrad",
+"http://www.hamweather.com/hamsat"
+);
+image = new initArray(
+"http://www.hamweather.com/images/banners_980/gen_banner_header1.png",
+"http://www.hamweather.com/images/banners_980/gen_banner_header2.png",
+"http://www.hamweather.com/images/banners_980/gen_banner_header3.png",
+"http://www.hamweather.com/images/banners_980/gen_banner_header4.png",
+"http://www.hamweather.com/images/banners_980/gen_banner_header5.png"
+);
+text = new initArray(
+"HAMweather Warning Maps for your site",
+"HAMweather Weather Maps for your site",
+"HAMweather - Bringing weather to your web.",
+"HAMweather Radar Maps for your site",
+"HAMweather Satellite Maps for your site"
+);
+var currentdate = new Date();
+var core = currentdate.getSeconds() % image.length;
+var ranlink  = link[core];
+var ranimage = image[core];
+var rantext  = text[core];
+//-->
+</SCRIPT>
+<style type="text/css">
+	body,td { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color:#000000; }
+	form {margin-bottom: 0px; margin-top: 0px;}
+	input {font-family: Arial, Helvetica, sans-serif;font-size: 11px;background-color: #FFFFFF;border: 1px solid #333333;color: #000000; }
+	select { font-size:12px; font-family: Arial, Helvetica, sans-serif;font-size: 11px;background-color: #FFFFFF;border: 1px solid #333333;color: #000000; }
+	.inputRadio {font-family: Arial, Helvetica, sans-serif;font-size: 11px;background-color: transparent;border: 0px solid #333333;color: #000000; }
+	#pands_input {font-family: arial; font-size: 12px; height: 20px; }
+	#pands_submit {font-family: arial; font-size: 12px; height: 20px; width: 28px;}
+	#nav, #nav ul {float: left;list-style: none;line-height: 1;background: #222F82;font-weight: bold;padding: 0;margin: 0 0 2px 2px; }
+	#nav a {display:block;color: #FFFFFF;text-decoration: none;padding: 0.25em .65em;font-size:11px; font-family: arial;}
+	#nav li {float: left;padding: 0px; text-align:center; margin-right: 15px; }
+	#nav li ul {position: absolute;left: -999em;height: auto;font-weight: normal;margin: 0;background:#93B0E1;z-index:99; }
+	#nav li li {border:solid 0px;border-top-color:#D3D3D3;border-bottom-color:#575757;border-left-color:#838383;border-right-color:#838383;text-align:left;text-indent:5px; margin-right: 0px;}
+	#nav li ul a {color:#000000;font-weight:bold;padding:1px 0px 3px 0px;font-size:10px;line-height:15px;}
+	#nav li ul ul {margin: -1.7em 0 0 15.35em; }
+	#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul {left: -999em;}
+	#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul {left: auto;}
+	#nav li:hover,	#nav li.sfhover {background: #7198D9; }
+	#nav a:hover,	#nav li.sfhover a{color:#FFFFFF; }
+	.headerTD {padding: 5px;background: #666699;}
+	.headerText {  font-size: 13px; font-weight: bold;color: #FFFFFF;}
+	.headerTextp {  font-size: 13px; color: #FFFFFF;}
+	.headerDate {   color:#FFFFFF;}
+	.basicHeaderText{ padding-left: 5px;font-size: 16px; font-weight: bold;}
+	#advisory { }
+	#advisory .Title {color: FF0000; font-weight: bold; font-size: 14px;}
+	#advisory .Label {font-weight: bold; font-size: 12px;}
+	#advisory .Value {font-size: 12px;}
+	.afd { padding-left: 5px;}
+	#localHeader { }
+	#localHeader .Place {  padding-left: 5px; font-size: 16px;  font-weight: bold;}
+	#localHeader .Wxn {  padding-left: 5px;font-weight: bold;}
+	#localHeader .Wxnp {  padding-left: 5px;}
+	#localHeader .Label {  font-weight: bold;}
+	#localHeader .Value { font-size: 10px;}
+	#forecastDetail {margin-left: 5px;}
+	#forecastDetail .Title {     font-weight: bold;}
+	#forecastDetail .forecastDisclaimer {	color: #0000FF;}
+	#forecastDetail .IntWxHeader {background-color: #CCCCCC; font-weight: bold; font-size: 12px;}
+	#forecastDetail .IntWxHeaderSub {font-size: 11px;font-weight: bold;}
+	#forecastRow {}
+	#forecastRow .Title {   font-size: 12px;  font-weight: bold;}
+	#forecastRow .wx {}
+	#forecastRow .high {color: #FF0000; }
+	#forecastRow .low {color: #0000FF; }
+	#forecastRow .pop {color: #238E23; }
+	#currents {}
+	#currents .Wx { font-size: 12px;  font-weight: bold;}
+	#currents .Temp {}
+	#currents .Label {font-weight: bold;  }
+	/* #currents .Value {} */
+	#astro {}
+	#astro .Label {font-weight: bold;  }
+	/* #astro .Value {} */
+	#mainContainer {width:500px; margin-top: 10px; }
+	#titleContainer {width: 500px; border-top-style: solid; border-left-style: solid; border-right-style: solid; border-width: 1px; border-color: #000000;  padding-bottom: 5px;padding-top: 5px; text-align: center; background-color: #666699; color: #ffffff; }
+	#mapContainer {width: 500px; border-style: solid;
+ border-width: 1px; border-color: #000000; background-color: #EFEFEF; padding-bottom: 5px;}
+	#mapIntervals {}
+	#mapIntervals .titleHeader{ background-color: #999999;  font-weight: bold; color: #FFFFFF;  padding: 3px;font-size: 10px;text-align: center;}
+	#mapIntervals .smallIntervals{ background-color: #DDDDDD;padding: 3px;font-size: 10px;text-align: center;}
+	#mapIntervals .smallIntervalsHover{ background-color: #93B0E1; padding: 3px;font-size: 10px;text-align: center;}
+	#mapIntervals .smallIntervalsSelected{ background-color: #FFDD35; padding: 3px;font-size: 10px;text-align: center;}
+	#mapIntervals .largeIntervals{ background-color: #CCCCCC;  padding: 3px;font-size: 10px;text-align: center;}
+	#mapIntervals .largeIntervalsHover{ background-color: #93B0E1; padding: 3px;font-size: 10px;text-align: center;}
+	#mapIntervals .largeIntervalsSelected{ background-color: #FFDD35; padding: 3px;font-size: 10px;text-align: center;}
+	#mapIntervalsForecast {}
+	#mapIntervalsForecast .titleHeader{ background-color: #999999;  font-weight: bold; color: #FFFFFF;  padding: 3px;font-size: 10px;text-align: center;}
+	#mapIntervalsForecast .smallIntervals{ background-color: #DDDDDD;padding: 3px;font-size: 10px;text-align: center;}
+	#mapIntervalsForecast .smallIntervalsHover{ background-color: #93B0E1; padding: 3px;font-size: 10px;text-align: center;}
+	#mapIntervalsForecast .smallIntervalsSelected{ background-color: #FFDD35; padding: 3px;font-size: 10px;text-align: center;}
+	#radar {}
+	#radar .radarMap  {position : relative;left : 0; top : 0; width : 640; height : 480;}
+	#radar .legend { position : absolute; left : 0; top : 0;}
+	#radar input{ background-color: transparent;}
+</style>
+<script language="Javascript">
+<!--
+sfHover = function() {
+	var sfEls = document.getElementById("nav").getElementsByTagName("LI");
+	for (var i=0; i<sfEls.length; i++) {
+		sfEls[i].onmouseover=function() {
+			this.className+=" sfhover";
+		}
+		sfEls[i].onmouseout=function() {
+			this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+		}
+	}
+}
+if (window.attachEvent) window.attachEvent("onload", sfHover);
+//-->
+</SCRIPT>
+<script language="Javascript" src="/prototype.js"></script>
+<script language="Javascript" src="/hwtooltip.js"></script>
+<script language="Javascript" src="/swfobject.js"></script>
+</head>
+<body bgcolor="#3333FF" LINK="#000080" VLINK="#000080" LEFTMARGIN="0" TOPMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0" BACKGROUND="/images/hw_pgbg.gif" style="background-repeat: repeat-y; "  >
+<table   width="980" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tr>
+
+    <td width="980" valign="top" colspan="3"><script language="Javascript"><!--
+document.write('<a href=\"' +ranlink+ '\"><img src=\"'+ranimage+'\" border="0" alt=\"'+rantext+'\" height="101" width="980"></a>');
+--></script><noscript><img width="980" height="101" src="http://www.hamweather.com/images/gen_banner_header3.png"></noscript></td></tr>
+    <tr>
+	<td valign="top" width="650" bgcolor="#222F82" style="width:650px;"><div id="nav" ><ul>
+    <li ><a href="http://www.hamweather.com/">Home</a></li>
+    <li ><a href="/cgi-bin/hw3/hw3.cgi">Forecast</a><ul style="width:95px;">
+        <li style="width:94px;"><a href="/cgi-bin/hw3/hw3.cgi">My Forecast</a></li>
+
+        <li style="width:94px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=yourweather_options">Set My Forecast</a></li>
+        <li style="width:94px;position:relative;"><a href="http://www.hamweather.net/local/us.html">US Weather</a></li>
+        <li style="width:94px;position:relative;"><a href="http://www.hamweather.net/local/ca.html">Canada Weather</a></li>
+        <li style="width:94px;position:relative;"><a href="http://www.hamweather.net/local/">World Weather</a></li>
+      </ul>
+    </li>
+	<li ><a href="http://tropics.hamweather.net/index.html">Tropical</a><ul style="width:115px;">
+
+        <li style="width:114px;"><a href="http://tropics.hamweather.net/index.html">Active Systems</a></li>
+        <li style="width:114px;"><a href="http://tropics.hamweather.net/2007/archive.html">Tropical Archive</a></li>
+        <li style="width:114px;"><a href="http://tropics.hamweather.net/discussions/atlantic.html">Basin Outlooks</a></li>
+ 		<li style="width:114px;"><a href="http://tropics.hamweather.net/maps/sst/fulltropics.html">Sea Surface Temps</a></li>
+ 		<li style="width:114px;"><a href="http://tropics.hamweather.net/maps/clir/atlantic/latest.html">Tropical Satellites</a></li>
+      </ul>
+
+    </li>
+    <li ><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=radarmap&s=us&nextype=1">Radar</a><ul style="width:100px;">
+        <li style="width:99px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=radarmap&s=us&nextype=1">Snow/Ice/Rain</a></li>
+        <li style="width:99px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=radarmap&s=us&nextype=0">Base Reflectivity</a></li>
+        <li style="width:99px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=satmap&dpp=0&sat=conus_satrad&loop=&satc=5&size=640x480">SatRad Combo</a></li>
+      </ul>
+    </li>
+
+    <li ><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=wxmap&dpp=0">Maps</a><ul style="width:85px;">
+        <li style="width:84px;position:relative;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=satmap&dpp=0">Satellite</a>
+        	<ul  style="width:110px;margin-left:80px;">
+        		<li style="width:109px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=satmap&dpp=0&sat=conus_bwir&loop=&satc=1">Infrared</a></li>
+        <li style="width:109px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=satmap&dpp=0&sat=conus_clir&loop=&satc=1">Enhanced Infrared</a></li>
+        <li style="width:109px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=satmap&dpp=0&sat=conus_vis&loop=&satc=1">Visible</a></li>
+
+        <li style="width:109px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=satmap&dpp=0&sat=conus_wv&loop=&satc=1">Water Vapor</a></li>
+        <li style="width:109px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=satmap&dpp=0&sat=conus_satrad&loop=&satc=5&size=640x480">SatRad Combo</a></li>
+        <li style="width:109px;position:relative;"><a href="http://www.hamweather.com/hamsat/supersats/">SuperSats</a></li>
+          </ul>
+        </li>
+     <li style="width:84px;position:relative;"><a href="http://www.hamweather.com/hamsat/supersats/">SuperSats<span style="font-size: 7px; color: #DD1111; text-decoration:none;"> NEW</span></a></li>
+
+	    <li  style="width:84px;position:relative;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=radarmap&s=us&nextype=1">Radar</a>
+	    	<ul  style="width:100px;margin-left:80px;">
+	        <li style="width:99px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=radarmap&s=us&nextype=1">Snow/Ice/Rain</a></li>
+	        <li style="width:99px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=radarmap&s=us&nextype=0">Base Reflectivity</a></li>
+	        <li style="width:99px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=satmap&dpp=0&sat=conus_satrad&loop=&satc=5&size=640x480">SatRad Combo</a></li>
+	      </ul>
+	    </li>
+
+	    <li  style="width:84px;position:relative;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=warningmap&dpp=0&state=us">Advisories</a>
+		</li>
+	    <li  style="width:84px;position:relative;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=wxmap&dpp=0">Weather</a>
+	    	<ul  style="width:120px;margin-left:80px;">
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=wxmap&dpp=0">Combined Forecasts</a></li>
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=wxmap&type=wxrain">Rain Forecast</a></li>
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=wxmap&type=wxtstorm">Storm Forecast</a></li>
+
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=wxmap&type=wxwintry">Wintry Forecast</a></li>
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=wxmap&type=wxfog">Fog Forecast</a></li>
+	      </ul>
+	    	</li>
+	    <li  style="width:84px;position:relative;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=currentsmap&dpp=0">Currents</a>
+	    	<ul  style="width:120px;margin-left:80px;">
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=currentsmap&dpp=0">Temperatures</a></li>
+
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=currentsmap&type=dewpoints">Dew Points</a></li>
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=currentsmap&type=humidity">Relative Humidity</a></li>
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=currentsmap&type=windspeed>Wind Speed</a></li>
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=currentsmap&type=windchill">Wind Chill</a></li>
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=currentsmap&type=heatindex">Heat Index</a></li>
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=currentsmap&type=pressure">Pressure</a></li>
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=currentsmap&type=snowdepth">Snow Depth</a></li>
+
+	      </ul>
+	    	</li>
+	    <li  style="width:84px;position:relative;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=currentsmap&dpp=0">Temperatures</a>
+	    	<ul  style="width:120px;margin-left:80px;">
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=temperaturesmap&dpp=0">Temperatures</a></li>
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=temperaturesmap&type=heatindex">Heat Index</a></li>
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=temperaturesmap&type=windchill">Wind Chill</a></li>
+
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=temperaturesmap&type=forecasts">Forecasts</a>
+		   <ul  style="width:84px;margin-left:116px;">
+		   	<li style="width:83px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=temperaturesmap&type=forecasts&s=us">USA</a></li>
+			<li style="width:83px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=temperaturesmap&type=forecasts&s=ca">Canada</a></li>
+			<li style="width:83px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=temperaturesmap&type=forecasts&s=mx">Mexico</a></li>
+			<li style="width:83px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=temperaturesmap&type=forecasts&s=afr">Africa</a></li>
+
+			<li style="width:83px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=temperaturesmap&type=forecasts&s=aus">Australia</a></li>
+			<li style="width:83px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=temperaturesmap&type=forecasts&s=crb">Caribbean</a></li>
+		   	<li style="width:83px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=temperaturesmap&type=forecasts&s=eur">Europe</a></li>
+		   	<li style="width:83px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=temperaturesmap&type=forecasts&s=mide">Middle East</a></li>
+		   	<li style="width:83px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=temperaturesmap&type=forecasts&s=nam">North America</a></li>
+		   	<li style="width:83px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=temperaturesmap&type=forecasts&s=nas">North Asia</a></li>
+
+		   	<li style="width:83px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=temperaturesmap&type=forecasts&s=sas">South Asia</a></li>
+		   	<li style="width:83px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=temperaturesmap&type=forecasts&s=sam">South America</a></li>
+	        </ul>
+	        </li>
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=temperaturesmap&type=yesthighs">Yesterday's Highs</a></li>
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=temperaturesmap&type=yestlows">Yesterday's Lows</a></li>
+	      </ul>
+
+	    	</li>
+	    <li  style="width:84px;position:relative;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=qpfmap">Precipitation</a>
+	    	<ul  style="width:120px;margin-left:80px;">
+	    	   <li style="width:119px;"><a href="/maps/globalqpf/480x360/us.html">Precipitation (Global)</a>
+		   <ul  style="width:84px;margin-left:116px;">
+		   	<li style="width:83px;"><a href="/maps/globalqpf/480x360/us.html">USA</a></li>
+			<li style="width:83px;"><a href="/maps/globalqpf/480x360/ca.html">Canada</a></li>
+
+			<li style="width:83px;"><a href="/maps/globalqpf/480x360/mx.html">Mexico</a></li>
+			<li style="width:83px;"><a href="/maps/globalqpf/480x360/afr.html">Africa</a></li>
+			<li style="width:83px;"><a href="/maps/globalqpf/480x360/aus.html">Australia</a></li>
+			<li style="width:83px;"><a href="/maps/globalqpf/480x360/crb.html">Caribbean</a></li>
+		   	<li style="width:83px;"><a href="/maps/globalqpf/480x360/eur.html">Europe</a></li>
+		   	<li style="width:83px;"><a href="/maps/globalqpf/480x360/mide.html">Middle East</a></li>
+
+		   	<li style="width:83px;"><a href="/maps/globalqpf/480x360/nam.html">North America</a></li>
+		   	<li style="width:83px;"><a href="/maps/globalqpf/480x360/nas.html">North Asia</a></li>
+		   	<li style="width:83px;"><a href="/maps/globalqpf/480x360/sas.html">South Asia</a></li>
+		   	<li style="width:83px;"><a href="/maps/globalqpf/480x360/sam.html">South America</a></li>
+	        </ul>
+	    	   </li>
+	        <li style="width:119px;"><a href="/maps/qpfmap/480x360/us.html">Precipitation (US Only)</a></li>
+
+	        <li style="width:119px;"><a href="/maps/snowmap/480x360/us.html">Snowfall</a></li>
+	        <li style="width:119px;"><a href="/maps/skymap/480x360/us.html">Cloud Coverage</a></li>
+	        <li style="width:119px;"><a href="/maps/skyqpfsnowmap/480x360/us.html%</a></li>
+	        <li style="width:119px;"><a href="/maps/popmap/480x360/us.html">Probability of Precip</a></li>
+	      </ul>
+	    	</li>
+		<li  style="width:84px;position:relative;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=palmermap&dpp=0">Drought Index</a>
+		<ul  style="width:120px;margin-left:80px;">
+
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=palmermap&dpp=0">Palmer Drought Index</a></li>
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=palmermap&type=cmi">Crop Moisture</a></li>
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=palmermap&type=precipneeded">Precip Needed</a></li>
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=palmermap&type=fieldcap">Field Capacity</a></li>
+	        <li style="width:119px;"><a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=palmermap&type=moistanom">Mositure Anomaly</a></li>
+	     </ul>
+
+	</li>
+      </ul>
+    </li>
+    <li ><a href="http://www.hamweather.com/hw3/hw3php/">Products</a>
+    	<ul  style="width:121px;">
+    		<li  style="width:120px;position:relative;"><a href="http://www.hamweather.com/hw3/hw3perl/">HAMweather 3</a></li>
+		<li  style="width:120px;position:relative;"><a href="http://support.hamweather.com/dload.php">HAMweather Plugins</a></li>
+
+		<li  style="width:120px;position:relative;"><a href="http://www.hamweather.com/hw3/hw3perl/demos.shtml">Demo</a></li>
+		<li  style="width:120px;position:relative;"><a href="http://www.hamweather.com/hw3/hw3perl/download.shtml">Download</a></li>
+	    <li  style="width:120px;position:relative;"><a href="http://www.hamweather.com/hw3/store/">Register HAMweather</a></li>
+      </ul>
+    </li>
+    <li ><a href="http://www.hamweather.com/services/">Services</a>
+    	<ul  style="width:100px;">
+
+    		<li  style="width:99px;position:relative;"><a href="http://www.hamweather.com/services/">Installation</a></li>
+    		<li  style="width:99px;position:relative;"><a href="http://www.hamweather.com/services/">Customizations</a></li>
+	    <li  style="width:99px;position:relative; border-top:solid 1px;border-top-color:#D3D3D3;"><a href="http://www.hamweather.com/hwcontours/">HWcontours</a></li>
+	    <li  style="width:99px;position:relative;"><a href="http://www.hamweather.com/hwwarnings//">HWwarnings</a></li>
+	    <li  style="width:99px;position:relative;"><a href="http://www.hamweather.com/hamrad/">HAMrad</a></li>
+	    <li  style="width:99px;position:relative;"><a href="http://www.hamweather.com/hamsat/">HAMsat</a></li>
+
+	    <li  style="width:99px;position:relative;"><a href="http://www.hamweather.com/hwdata/">Weather Feeds</a></li>
+	    <li  style="width:99px;position:relative;"><a href="http://www.hamweather.com/hwaudio/">HWaudio</a></li>
+	    <li  style="width:99px;position:relative;"><a href="http://www.hamvid.com/">HAMvid</a></li>
+      </ul>
+    	</li>
+    <li ><a href="http://support.hamweather.com/">Support</a>
+    	<ul  style="width:100px;">
+
+    		<li  style="width:99px;position:relative;"><a href="http://support.hamweather.com/">Support Forums</a></li>
+    		<li  style="width:99px;position:relative;"><a href="http://www.hamweather.com/hw3/docs/">HAMweather Docs</a></li>
+    		<li  style="width:99px;position:relative;"><a href="http://www.hamweather.com/kb/">Knowledge Base</a></li>
+    		<li  style="width:99px;position:relative;"><a href="http://www.hamweather.com/services/">Contact</a></li>
+    	</ul>
+    	</li>
+    <li ><a href="http://www.hamweather.com/services/">Contact</a></li>
+
+  </ul></div></td>
+ 	<td  width="3" bgcolor="#000000" style="width:3px;" rowspan="3">&nbsp;</td>       <td valign="middle"  bgcolor="#3745C8" width="327" align="center" rowspan="2" style="width:327px;"><img src="/images/hamvid_sm_header.png" border=0 width="327" height="50" alt="HAMvide Banner"></td>  
+  </tr>
+    <tr>
+  	<td valign="top" width="650">  
+<form name="getforecast" action="/cgi-bin/hw3/hw3.cgi" method="get" style="margin:0;">
+    <table BORDER="0" bgcolor="#FFCC00" WIDTH="100%">
+      <tr>
+      <td  ALIGN="left" style="margin-left: 3px;"><a href="/cgi-bin/hw3/hw3.cgi" style="font-family: arial; font-size: 13px; ">My Forecast</a> | <a href="/local/" style="font-family: arial; font-size: 13px; ">Weather Directory</a> | <a href="http://tropics.hamweather.net/index.html" style="font-family: arial; font-size: 13px; color:#600;">Tropical/Hurricane<span style="font-size:12px; color:#B00;text-decoration:none;"><b>&lArr;New<b></span></a></td>
+
+        <td  ALIGN="right" style="margin-right: 3px;"><div>
+        <input type="hidden" name="config" value="">
+         <input type="hidden" name="forecast" value="zandh">
+        <span style="font-family: arial; font-size: 13px; font-weight: bold;">Local Weather:&nbsp;</span><input id="pands_input" TYPE="text" size="23" value="Zip Code or City, State" name="pands" onFocus="this.value='';this.style.backgroundColor='#ffffff';this.style.color='#990000';">&nbsp;<input id="pands_submit" TYPE="submit" VALUE="GO" NAME="Submit"></td>
+      </tr>
+    </table>
+</form>
+</td>
+</tr>
+<tr>
+
+ 	<td valign="top" width="650">  
+<table width="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0" align="center"  bgcolor="#FFFFFF">
+  <tr>
+    <td VALIGN="top" WIDTH="100%" bgcolor="#FFFFFF">
+<div id="wxbody" stle="width: 98%; align: center;">
+<!-- ---------------END HEADER--------------- //-->
+<div id="localHeader">
+<table   border="0" width="100%" cellspacing="0" cellpadding="2">
+   <tr>
+      <td><span class="Place">Toulouse / Francazal, <a href="http://www.hamweather.net/local/fr.html" style="text-decoration: none; color: #000000">France</a><br/></span>
+
+<span class="Wxn">International Forecast powered by <a href="http://www.hamweather.com/hwdata/">HWdata Weather Feeds</a></span>
+      	</td>
+      <td align="right" valign="bottom"  class="Value">
+  <span class="Wxn"><a href="/cgi-bin/hw3/hw3.cgi?forecast=zandh&pands=toulouse,fr&sc=pands">Save as Default Location</a></span><br/>   
+      	<b>Lat:</b> 43.53N, <b>Lon:</b> 1.37E<br> 
+            <b>ICAO Used:</b> <a style="color:#FF0000" href="/cgi-bin/hw3/hw3.cgi?config=&forecast=pass&pass=icao_desc&icao=lfbf&dpp=1" onClick="return OpenWindow('/cgi-bin/hw3/hw3.cgi?config=&forecast=pass&dpp=1&pass=icao_desc&icao=LFBO',425,225,'');"><b>LFBO</b></a> </font></td>
+
+   </tr>
+</table>
+</div>
+<div class="tabberlive" id="tab1">
+  <ul class="tabbernav">
+    <li class="tabberactive">
+      <a href="/cgi-bin/hw3/hw3.cgi?config=&forecast=intwx&interval=24&placeid=lfbf&icao=lfbf" onclick="">
+      Days 1-7</a>
+    </li>
+    <li >
+
+      <a href="/cgi-bin/hw3/hw3.cgi?config=&forecast=intwxext&interval=24&placeid=lfbf&icao=lfbf" onclick="">
+      Days 8-15 <span style="font-size: 7px; color: #DD1111; text-decoration:none;"> BETA</span></a>
+    </li>
+    <li >
+      <a href="/cgi-bin/hw3/hw3.cgi?config=&forecast=obarchive&place=toulouse&state=&placeid=&country=fr&icao=LFBO" onclick="">
+      Past Weather</a>
+    </li>
+
+    <li >
+      <a href="/cgi-bin/hw3/hw3.cgi?config=&forecast=summary&country=fr&placeid=lfbf" onclick="">
+      National Summary</a>
+    </li>
+  </ul>
+</div><!-- ---- Begin CC Data ---- //-->
+<table border="0" width="100%" >
+   <tr>
+      <td class="headerTD" valign="top"><span class="headerText">Current Conditions at nearby:<br/>Toulouse<br/>
+
+          </span><span class="headerDate">Updated: 700 PM GMT+1 THU SEP 27 2007</span>
+      </td>
+                <td  class="headerTD" valign="top"><span class="headerText">Sun & Moon Information</span></td>       
+   </tr>
+      <td valign="top">
+<!-- ---------------BEGIN CURRENT CONDITIONS--------------- //-->
+<div id="currents">
+<table border="0" width="100%" >
+   <tr>
+
+      <td valign="top" align="center">
+         <table border="0" cellspacing=2 cellpadding=0>
+            <tr>
+               <td width="100%" colspan="2" align="center"><img src="http://www.hamweather.net/hw3/images/fcicons/pcloudyn.gif" alt="Partly Cloudy" width="50" height="53"></td>
+            </tr>
+            <tr>
+               <td width="100%" colspan="2" align="center" class="Wx">Partly Cloudy</td>
+            </tr>
+
+            <tr>
+               <td valign="top" class="Temp">Temp:</td>
+               <td valign="top" align="right" class="Temp">10&deg;C</td>
+            </tr>
+         </table>
+      </td>
+      <td valign="top" align="center" >
+
+         <table border="0" cellspacing=2 cellpadding=0>
+            <tr>
+               <td valign="top" class="Label">Humidity:</td>
+               <td align="right" class="Value">82%</td>
+            </tr>
+            <tr>
+               <td valign="top" class="Label">Wind Speed:</td>
+
+               <td align="right" class="Value">W 12 MPH</td>
+            </tr>
+            <tr>
+               <td valign="top" class="Label">Barometer:</td>
+               <td align="right" class="Value">    1015 mb   </td>
+            </tr>
+            <tr>
+
+               <td valign="top" class="Label">Dewpoint:</td>
+               <td align="right" class="Value">7&deg;C</td>
+            </tr>
+                       <tr>                 <td valign="top" class="Label">Wind Chill:</td>                 <td align="right" class="Value">8&deg;C</td>              </tr>           
+         </table>
+
+      </td>
+   </tr>
+</table>
+</div>
+<!-- ---------------END CURRENT CONDITIONS--------------- //-->      </td>
+                <td valign="top">  <!-- BEGIN ASTRO INFO //-->
+<div id="astro">
+<table border="0" width="100%" >
+   <tr>
+      <td valign="top" class="Label">Civil Twilight:</td>
+
+      <td align="left" class="Value">6:18 AM  GMT+1</td>
+     <td align="center" rowspan="4" valign="top"><span class="Label">Moon Phase:<br /></span><span class="Value">Waning Gibbous Moon<br /></span>
+         <img src="http://www.hamweather.net/hw3/images/moonphases/new/m15.gif" width="55" height="55">
+      </td>
+   </tr><tr>
+      <td valign="top" class="Label">Sunrise:</td>
+      <td valign="top" class="Value">6:47 AM GMT+1</td>
+
+   </tr><tr>
+      <td valign="top" class="Label">Sunset:</td>
+      <td align="left" class="Value">6:43 PM GMT+1</td>
+   </tr><tr>
+      <td valign="top" class="Label">Civil Twilight:</td>
+      <td align="left" class="Value">7:11 PM  GMT+1</td>
+   </tr>
+
+</table>
+</div>
+<!-- END ASTRO INFO //-->
+ </td>        
+   </tr>
+</table>
+<!-- ---- End CC Data ---- //-->
+ <table border=0 width="100%">
+   <tr>
+<td valign="top" class="headerTD"><span class="headerText">Seven Day Forecast:&nbsp;&nbsp;&nbsp;</span><span class="headerDate">Intervals: <a href="/cgi-bin/hw3/hw3.cgi?config=&forecast=intwx&interval=3&placeid=lfbf&icao=lfbf" style="color: #FFFFFF;">3 Hour</a> | <a href="/cgi-bin/hw3/hw3.cgi?config=&forecast=intwx&interval=6&placeid=lfbf&icao=lfbf" style="color: #FFFFFF;">6 Hour</a> | <a href="/cgi-bin/hw3/hw3.cgi?config=&forecast=intwx&interval=24&placeid=lfbf&icao=lfbf" style="color: #FFFFFF;">12 Hour</a></span></td>
+
+   </tr>
+</table>
+<div id="forecastRow">
+<table border=0 width=100%>
+   <tr>     	<td align="center" valign="top" class="Title">THURSDAY<br>SEP 27</td>         	<td align="center" valign="top" class="Title">FRIDAY<br>SEP 28</td>         	<td align="center" valign="top" class="Title">SATURDAY<br>SEP 29</td>         	<td align="center" valign="top" class="Title">SUNDAY<br>SEP 30</td>         	<td align="center" valign="top" class="Title">MONDAY<br>OCT 1</td>         	<td align="center" valign="top" class="Title">TUESDAY<br>OCT 2</td>         	<td align="center" valign="top" class="Title">WEDNESDAY<br>OCT 3</td>    </tr>
+
+   <tr><td align="center"><img src="http://www.hamweather.net/hw3/images/fcicons/rain.gif" width="45" height="47"></td><td align="center"><img src="http://www.hamweather.net/hw3/images/fcicons/pcloudy.gif" width="45" height="47"></td><td align="center"><img src="http://www.hamweather.net/hw3/images/fcicons/pcloudy.gif" width="45" height="47"></td><td align="center"><img src="http://www.hamweather.net/hw3/images/fcicons/pcloudy.gif" width="45" height="47"></td><td align="center"><img src="http://www.hamweather.net/hw3/images/fcicons/mcloudy.gif" width="45" height="47"></td><td align="center"><img src="http://www.hamweather.net/hw3/images/fcicons/mcloudy.gif" width="45" height="47"></td><td align="center"><img src="http://www.hamweather.net/hw3/images/fcicons/cloudy.gif" width="45" height="47"></td></tr>
+   <tr>     	<td align="center" valign="top" class="wx">Cloudy -<br>Light Shower<br>Possible</td>     	<td align="center" valign="top" class="wx">Partly Cloudy</td>     	<td align="center" valign="top" class="wx">Partly Cloudy</td>     	<td align="center" valign="top" class="wx">Partly Cloudy</td>     	<td align="center" valign="top" class="wx">Mostly Cloudy</td>     	<td align="center" valign="top" class="wx">Mostly Cloudy</td>     	<td align="center" valign="top" class="wx">Overcast</td></tr>
+
+   <tr><td valign="top" align="center">                    <span  class="high">Hi: 11&deg;C / 51&deg;F</span><br><span  class="low">Lo: 7&deg;C / 45&deg;F</span></td>             <td valign="top" align="center">                    <span  class="high">Hi: 18&deg;C / 65&deg;F</span><br><span  class="low">Lo: 8&deg;C / 47&deg;F</span></td>             <td valign="top" align="center">                    <span  class="high">Hi: 26&deg;C / 78&deg;F</span><br><span  class="low">Lo: 9&deg;C / 47&deg;F</span></td>             <td valign="top" align="center">                    <span  class="high">Hi: 30&deg;C / 85&deg;F</span><br><span  class="low">Lo: 15&deg;C / 58&deg;F</span></td>             <td valign="top" align="center">                    <span  class="high">Hi: 26&deg;C / 78&deg;F</span><br><span  class="low">Lo: 15&deg;C / 60&deg;F</span></td>             <td valign="top" align="center">                    <span  class="high">Hi: 27&deg;C / 81&deg;F</span><br><span  class="low">Lo: 14&deg;C / 58&deg;F</span></td>             <td valign="top" align="center">                    <span  class="high">Hi: 24&deg;C / 75&deg;F</span><br><span  class="low">Lo: 13&deg;C / 55&deg;F</span></td>             </tr>
+
+</table>
+</div>
+<table border=0 width="100%"  cellspacing=1 cellpadding=0>
+   <tr>
+<td valign="top" class="headerTD"><span class="headerText">Forecast Breakdown:<br/></span><span class="headerDate">Intervals: <a href="/cgi-bin/hw3/hw3.cgi?config=&forecast=intwx&interval=3&placeid=lfbf&icao=lfbf" style="color: #FFFFFF;">3 Hour</a> | <a href="/cgi-bin/hw3/hw3.cgi?config=&forecast=intwx&interval=6&placeid=lfbf&icao=lfbf" style="color: #FFFFFF;">6 Hour</a> | <a href="/cgi-bin/hw3/hw3.cgi?config=&forecast=intwx&interval=24&placeid=lfbf&icao=lfbf" style="color: #FFFFFF;">12 Hour</a></span></td>
+   <td valign="top" class="headerTD" width="325"><span class="headerText">Regional Information:<br/></span></td>
+
+   </tr>
+	<tr>
+<td valign="top">
+<div id="forecastDetail"><table border="0" cellpadding="4" cellspacing="0" width="98%">
+  	  	<tr  >  	<td align="left" width="58"><img src="http://www.hamweather.net/hw3/images/fcicons/mcloudyrn.png" width="55" height="58" align="absmiddle"></td>  	<td valign="top" align="left"><span class="Title">Thursday Night<br/></span>Mostly Cloudy With Scattered Light Showers Possible.<br />  	  	Low: 8&deg;C / 47&deg;F.<br />  	  	 		 			Winds: W 16 kph (10 mph)<br />  	    	 	 		Precipitation: 0.30mm (0.01 in)*    </td></tr>    	  	<tr bgcolor="#EEEEEE" >  	<td align="left" width="58"><img src="http://www.hamweather.net/hw3/images/fcicons/pcloudy.gif" width="55" height="58" align="absmiddle"></td>  	<td valign="top" align="left"><span class="Title">Friday<br/></span>Partly Cloudy.<br />  	  	High: 18&deg;C / 65&deg;F.<br />  	  	 		 			Winds: S 8 kph (5 mph)<br />  	    	 	  </td></tr>    	  	<tr  >  	<td align="left" width="58"><img src="http://www.hamweather.net/hw3/images/fcicons/pcloudyn.gif" width="55" height="58" align="absmiddle"></td>  	<td valign="top" align="left"><span class="Title">Friday Night<br/></span>Partly Cloudy.<br />  	  	Low: 8&deg;C / 47&deg;F.<br />  	  	 		 			Winds: E 8-16 kph (5-10 mph)<br />  	    	 	  </td></tr>    	  	<tr bgcolor="#EEEEEE" >  	<td align="left" width="58"><img src="http://www.hamweather.net/hw3/images/fcicons/pcloudy.gif" width="55" height="58" align="absmiddle"></td>  	<td valign="top" align="left"><span class="Title">Saturday<br/></span>Partly Cloudy.<br />  	  	High: 26&deg;C / 78&deg;F.<br />  	  	 		 			Winds: E 8-16 kph (5-10 mph)<br />  	    	 	  </td></tr>    	  	<tr  >  	<td align="left" width="58"><img src="http://www.hamweather.net/hw3/images/fcicons/mcloudyn.gif" width="55" height="58" align="absmiddle"></td>  	<td valign="top" align="left"><span class="Title">Saturday Night<br/></span>Mostly Cloudy.<br />  	  	Low: 14&deg;C / 58&deg;F.<br />  	  	 		 			Winds: SE 8-16 kph (5-10 mph)<br />  	    	 	  </td></tr>    	  	<tr bgcolor="#EEEEEE" >  	<td align="left" width="58"><img src="http://www.hamweather.net/hw3/images/fcicons/pcloudy.gif" width="55" height="58" align="absmiddle"></td>  	<td valign="top" align="left"><span class="Title">Sunday<br/></span>Partly Cloudy.<br />  	  	High: 30&deg;C / 85&deg;F.<br />  	  	 		 			Winds: E 8-16 kph (5-10 mph)<br />  	    	 	  </td></tr>    	  	<tr  >  	<td align="left" width="58"><img src="http://www.hamweather.net/hw3/images/fcicons/mcloudyn.gif" width="55" height="58" align="absmiddle"></td>  	<td valign="top" align="left"><span class="Title">Sunday Night<br/></span>Mostly Cloudy.<br />  	  	Low: 18&deg;C / 64&deg;F.<br />  	  	 		 			Winds: SE 8-16 kph (5-10 mph)<br />  	    	 	  </td></tr>    	  	<tr bgcolor="#EEEEEE" >  	<td align="left" width="58"><img src="http://www.hamweather.net/hw3/images/fcicons/mcloudy.gif" width="55" height="58" align="absmiddle"></td>  	<td valign="top" align="left"><span class="Title">Monday<br/></span>Mostly Cloudy.<br />  	  	High: 26&deg;C / 78&deg;F.<br />  	  	 		 			Winds: SE 8-16 kph (5-10 mph)<br />  	    	 	  </td></tr>    	  	<tr  >  	<td align="left" width="58"><img src="http://www.hamweather.net/hw3/images/fcicons/pcloudyn.gif" width="55" height="58" align="absmiddle"></td>  	<td valign="top" align="left"><span class="Title">Monday Night<br/></span>Partly Cloudy.<br />  	  	Low: 15&deg;C / 60&deg;F.<br />  	  	 		 			Winds: SE 8-16 kph (5-10 mph)<br />  	    	 	  </td></tr>    	  	<tr bgcolor="#EEEEEE" >  	<td align="left" width="58"><img src="http://www.hamweather.net/hw3/images/fcicons/mcloudy.gif" width="55" height="58" align="absmiddle"></td>  	<td valign="top" align="left"><span class="Title">Tuesday<br/></span>Mostly Cloudy.<br />  	  	High: 27&deg;C / 81&deg;F.<br />  	  	 		 			Winds: E 8-16 kph (5-10 mph)<br />  	    	 	  </td></tr>    	  	<tr  >  	<td align="left" width="58"><img src="http://www.hamweather.net/hw3/images/fcicons/mcloudyn.gif" width="55" height="58" align="absmiddle"></td>  	<td valign="top" align="left"><span class="Title">Tuesday Night<br/></span>Mostly Cloudy.<br />  	  	Low: 14&deg;C / 58&deg;F.<br />  	  	 		 			Winds: SE 8 kph (5 mph)<br />  	    	 	  </td></tr>    	  	<tr bgcolor="#EEEEEE" >  	<td align="left" width="58"><img src="http://www.hamweather.net/hw3/images/fcicons/cloudy.gif" width="55" height="58" align="absmiddle"></td>  	<td valign="top" align="left"><span class="Title">Wednesday<br/></span>Overcast.<br />  	  	High: 24&deg;C / 75&deg;F.<br />  	  	 		 			Winds: SE 8-16 kph (5-10 mph)<br />  	    	 	  </td></tr>    	  	<tr  >  	<td align="left" width="58"><img src="http://www.hamweather.net/hw3/images/fcicons/mcloudyrn.png" width="55" height="58" align="absmiddle"></td>  	<td valign="top" align="left"><span class="Title">Wednesday Night<br/></span>Mostly Cloudy With Scattered Light Showers Possible.<br />  	  	Low: 13&deg;C / 55&deg;F.<br />  	  	 		 			Winds: SW 8 kph (5 mph)<br />  	    	 	 		Precipitation: 1.58mm (0.06 in)*    </td></tr>    	  	<tr bgcolor="#EEEEEE" >  	<td align="left" width="58"><img src="http://www.hamweather.net/hw3/images/fcicons/pcloudyr.gif" width="55" height="58" align="absmiddle"></td>  	<td valign="top" align="left"><span class="Title">Thursday<br/></span>Party Cloudy With Isolated Showers Possible.<br />  	  	High: 22&deg;C / 72&deg;F.<br />  	  	 		Winds: Calm<br />    	 	 		Precipitation: 1.12mm (0.04 in)*    </td></tr>  
+
+<tr><td >&nbsp;</td><td class="forecastDisclaimer">*Precipitation measurements are liquid equivalent</td></tr>
+</table></div>
+</td>
+      <td  valign="top" align="center" bgcolor="#E9E9E9">
+      	<a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=currentsmap&dpp=0&s=eur"><img src="http://contours.hamweather.net/contours/hw_320x240/currents/eur_temperature_i1_points.png" width="320" height="240" border="0" alt="Current Conditions" title="Current Conditions"></a><br/>
+      	     <a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=precipmap_gfs&s=eur"><img border="0" alt="24 hour precipitation forecasts" title="24 hour precipitation forecast" src="http://contours.hamweather.net/contours/hw_320x240/gfs/eur_qpf_day1.png" width="320" height="240"></a><br/>
+      	     <a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=temperaturesmap&dpp=0&s=eur"><img src="http://contours.hamweather.net/contours/hw_320x240/forecasts/eur_forecasthighs_day2_i1_points.png" width="320" height="240" border="0" alt="Forecast Highs" title="Forecast Highs"></a><br/>
+      	     <a href="/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=temperaturesmap&dpp=0&s=eur"><img src="http://contours.hamweather.net/contours/hw_320x240/forecasts/eur_forecastlows_day2_i1_points.png" width="320" height="240" border="0" alt="Forecast Lows" title="Forecast Lows"></a>
+      </td>
+</tr></table>     
+
+<!-- ---------------BEGIN FOOTER--------------- //-->
+</div>
+    </td>
+  </tr>
+  <tr>
+    <td VALIGN="top" align="center" style="padding-top: 20px;"><font FACE="arial" SIZE="2">Created
+    using <a href="http://www.hamweather.com">HAMweather</a></font><br>
+    <font FACE="arial" SIZE="2">Copyright
+    &copy; 1997-2006 </font><font FACE="arial" SIZE="1"><a href="http://www.hamweather.com">HAMweather, LLC</a>, all rights reserved.</font>
+
+    </td>
+  </tr>
+</table>
+</td>
+     <td valign="top"  bgcolor="#3745C8" width="327"><table width="100%"   border="0" cellpadding="0" cellspacing="0" bgcolor="#3745C8" style="height:100%">    <tr><td>  
+<script type="text/javascript">
+// <![CDATA[
+	var hwvfeedPlaying;
+	// hwvFeeds is an array of feed info arrays
+	// each feed info array is [feedName, pands, feedIcon, feedTitle, feedDescription]
+	var hwvFeeds = new Array();
+	var hwvii=-1;
+	hwvii++;
+	hwvFeeds[hwvii] = ['natsum','',
+	'http://www.hamweather.com/images/feedicons/nat_sum.png',
+	'US National Summary',
+	'Weather summary for select US cities.'];
+	hwvii++;
+	hwvFeeds[hwvii] = ['natfore','',
+	'http://www.hamweather.com/images/feedicons/nat_fore.png',
+	'US City Forecasts',
+	'Extended forecasts for select cities.'];
+	hwvii++;
+	hwvFeeds[hwvii] = ['natcurmaps','',
+	'http://www.hamweather.com/images/feedicons/conus_temp.png',
+	'Current US Temperatures',
+	'The current temperatures across the US.'];
+	hwvii++;
+	hwvFeeds[hwvii] = ['curus','',
+	'http://www.hamweather.com/images/feedicons/conus_windchill.png',
+	'US Current Conditions',
+	'The current weather conditions across the US.'];
+	hwvii++;
+	hwvFeeds[hwvii] = ['sats','',
+	'http://www.hamweather.com/images/feedicons/conus_sat.png',
+	'US Satellites',
+	'Latest continental and regional infrared satellite'];
+	hwvii++;
+	hwvFeeds[hwvii] = ['radar','',
+	'http://www.hamweather.com/images/feedicons/conus_radar.png',
+	'US Radar',
+	'Latest continental and regional radars.'];
+	hwvii++;
+	hwvFeeds[hwvii] = ['curne','',
+	'http://www.hamweather.com/images/feedicons/northeast_temp.png',
+	'Northeast Current Conditions',
+	'The latest Northeast conditions.'];
+	hwvii++;
+	hwvFeeds[hwvii] = ['curec','',
+	'http://www.hamweather.com/images/feedicons/eastcentral_temp.png',
+	'Mid-Atlantic Current Conditions',
+	'The latest Mid-Atlantic conditions.'];
+	hwvii++;
+	hwvFeeds[hwvii] = ['curse','',
+	'http://www.hamweather.com/images/feedicons/southeast_temp.png',
+	'Southeast Current Conditions',
+	'The latest Southeast conditions.'];
+	hwvii++;
+	hwvFeeds[hwvii] = ['curnc','',
+	'http://www.hamweather.com/images/feedicons/northcentral_temp.png',
+	'Midwest Current Conditions',
+	'The latest Midwest conditions.'];
+	hwvii++;
+	hwvFeeds[hwvii] = ['curce','',
+	'http://www.hamweather.com/images/feedicons/central_temp.png',
+	'Central Plains Current Conditions',
+	'The latest Central Plains conditions.'];
+	hwvii++;
+	hwvFeeds[hwvii] = ['cursc','',
+	'http://www.hamweather.com/images/feedicons/southcentral_temp.png',
+	'Southern Plains Current Conditions',
+	'The latest Southern Plains conditions.'];
+	hwvii++;
+	hwvFeeds[hwvii] = ['curnw','',
+	'http://www.hamweather.com/images/feedicons/northwest_temp.png',
+	'Pacific Northwest Current Conditions',
+	'The latest Pacific Northwest conditions.'];
+	hwvii++;
+	hwvFeeds[hwvii] = ['curwc','',
+	'http://www.hamweather.com/images/feedicons/westcentral_temp.png',
+	'West Coast Current Conditions',
+	'The latest West Coast conditions.'];
+	hwvii++;
+	hwvFeeds[hwvii] = ['cursw','',
+	'http://www.hamweather.com/images/feedicons/southwest_temp.png',
+	'Southwest Current Conditions',
+	'The latest Southwest conditions.'];
+	// HAMvideo JS API commands
+	var HWVA;
+	var hwvPlayed=0;
+	function HWVonFeedDone() {
+		highlightFeed();
+		playFeed(hwvfeedPlaying+1);
+	}
+	function HWVloadFeed(cfg,pands,metric,lang) {
+		HWVA.loadVideoFeed(cfg,pands,metric,lang);
+	}
+	function HWVstop() {
+		HWVA.stopFeed();
+	}
+	function HWVplay() {
+		HWVA.playFeed();
+	}
+	function HWVmute() {
+		HWVA.muteVolume();
+	}
+	function HWVunmute() {
+		HWVA.unmuteVolume();
+	}
+	function HWVrestartWithAudio() {
+		HWVA.restartWithAudio();
+	}
+	function HWVonLoad () {
+		HWVA = document.getElementById('HWV');
+	}
+	function HWVloadBaseImage() {
+		return 'http://flash.hamvid.com/hamvid/engine/HWV_intro_select.swf';
+	}
+	// end HAMvid JS API commands
+	function playFeed(feedNum) {
+		if (feedNum >= hwvFeeds.length) feedNum = 0;
+		if (feedNum >= 0 && feedNum < hwvFeeds.length) {
+			hwvfeedPlaying = feedNum;
+			var feedInfo = hwvFeeds[feedNum];
+			if (!hwvPlayed) {
+				HWVA.changeBaseImage('http://flash.hamvid.com/hamvid/images/HWVinitload.swf');
+				hwvPlayed = 1;
+			}
+			HWVloadFeed(feedInfo[0],feedInfo[1],'','');
+			highlightFeed('feed' + feedNum);
+		}
+	}
+	function highlightFeed(feedID) {
+		var sfEls = document.getElementById("HAMvidFeeds").getElementsByTagName("DIV");
+		for (var i=0; i<sfEls.length; i++) {
+			if (sfEls[i].className == 'feedSelected') {
+				sfEls[i].className = 'feed';
+			}
+		}
+		if (feedID) {
+			$(feedID).className = 'feedSelected';
+		}
+	}
+// ]]>
+</script>
+<style>
+#HAMvidFeeds {
+	width:320px;
+	margin-top: 4px;
+	border-color: #CCCCCC #666666 #666666 #CCCCCC;
+	border: 1px solid;
+}
+#videoArea {
+	width:320px;
+	height: 270px;
+	background-color: #3745C8;
+	margin:0px;
+}
+#HWvidInfoRow {
+	width:320px;
+	height: 20px;
+	background-color: #666666;
+	margin: 0px;
+}
+#HWvidInfoRow .textLabel,#HWvidInfoRow a {
+	color: #FFFFFF;
+	font-size: 11px;
+	font-family: arial;
+	font-weight: bold;
+	vertical-align: bottom;
+}
+#feedRows {
+	border-color: #CCCCCC #666666 #666666 #CCCCCC;
+	border-top: 1px solid;
+	height:150px;
+	overflow-y: auto;
+	background-color: #E3E1DD;
+	width:320px;
+}
+#feedRow {
+	position: relative;
+	border-width: 1px; border-style: solid; border-color: #BEBEBE;
+	font-size: 12px; color:#FFFFFF; text-align: left;
+	background-color: #4C4C4C;
+	height: 35;
+}
+#feedRow .feed {background-color: #4C4C4C;height: 35}
+#feedRow .feedHover {	background-color: #7C7C7C;height: 35}
+#feedRow .feedSelected {background-color: #333333;height: 35}
+#feedRow .feedTitle {
+	position: absolute; top: 3; left: 45;
+	padding-left: 3px;
+	font-weight: bold;
+}
+#feedRow .feedDescription {
+	padding-left: 3px;
+	font-size: 11px;
+	position: absolute; top: 17; left: 45;
+}
+#feedRow .feedIcon {
+	position: absolute; top: 2; left: 3;
+	width: 40px; height: 30px;
+}
+</style>
+<center>
+<div  id="HAMvidFeeds">
+<div id="videoArea"><div align="center" id="HAMvidArea" ></div></div><div id="HWvidInfoRow"><table border="0" width="320" cellpadding="0" cellspacing="0" align="center" style="margin-top:3px;" ><td align="left" class="textLabel">&nbsp;<a href="#" onClick="location.href='/cgi-bin/hw3/hw3.cgi?forecast=pass&pass=hamvid_large&zipcode=&pf=' + hwvfeedPlaying;">Enlarge Video</a></td><td align="right" class="textLabel"><a class="infoLink" href="http://www.hamvid.com/">Info</a>&nbsp;|&nbsp;<a href="http://support.hamweather.com/viewforum.php?f=30" >Feedback</a>&nbsp;|&nbsp;<a href="http://www.hamweather.com/services/" >Report Error</a>&nbsp;</td></tr></table></div><div id="feedRows"><script>
+	var ii =0;
+	for (ii =0; ii < hwvFeeds.length; ii++) {
+		var feedInfo = hwvFeeds[ii];
+		document.write('<div id="feedRow"><div id="feed' + ii + '" class=');
+		document.write('"feed" onmouseover="if (this.className== \'feed\') this.className=\'feedHover\'');
+		document.write(';" onmouseout="if (this.className== \'feedHover\') this.className=\'feed\';" on');
+		document.write('Click="playFeed(' + ii + ');"><img src="' + feedInfo[2] + '" ');
+		document.write(' width="40" height="30" class="feedIcon"><span class="feedTitle');
+		document.write('">' + feedInfo[3] + '<br/></span><span class="feedDescription">' + feedInfo[4] + '</span></div></div>');
+	}
+
+</script></div>
+<div align="center" id="HAMvidAreaS" ></div>
+<script>
+	var fo = new FlashObject("http://flash.hamvid.com/hamvid/HWVAspenJS.swf?fvfdcfg=http://flash.hamvid.com/hamvid/", "HWV", "320", "270", "8", "#3745C8", true);
+	fo.addParam("quality", "high");
+	fo.addParam("swLiveConnect", true);
+	fo.addParam("allowScriptAccess", "always");
+	fo.addParam("scale", "noscale");
+	fo.addParam("menu", "false");
+		fo.write("HAMvidArea");
+		var hws = new SWFObject("http://flash.hamvid.com/hamvid/HWsecurity.swf", "hws", "1", "1", "8", "#3745C8");
+		hws.addParam("quality", "low");
+		hws.addParam("swLiveConnect", true);
+		fo.addParam("allowScriptAccess", "always");
+		hws.addParam("scale", "noscale");
+		hws.addParam("menu", "false");
+		hws.write("HAMvidAreaS");
+</script>
+</div>
+</center>
+
+</td></tr>
+</table>
+</td>
+</tr></table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-296143-2";
+urchinTracker();
+</script>
+</body>
+</html>
+

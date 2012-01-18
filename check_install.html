@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head><title>Check OpenNab install</title></head>
+<body>
+Open <a target='_blank' href='/vl/foobar'>http://my.domain.com/vl/foobar</a><br/>
+It should display : 'ERROR 404 from OpenNab'. Some web browsers (e.g. Internet Explorer might need some changes in configuration options to display the actual error message)<br/>
+ If not, you have an issue with Apache configuration (ErrorDocument feature in .htaccess is not available).<br/>
+ You must sort it out before going further.<br/>
+ <br/>
+Open <a target='_blank' href='/vl/tests/'>http://my.domain.com/vl/tests/</a><br/>
+ You should see a green status with all tests passed.<br/>
+ If not, you have a PHP issue. OpenNab code does not work on your PHP configuration.<br/>
+ If you get errors with either PHP 4.4.x or 5.2.x, ask on Nabaztag help forum <a target='_blank' href='http://sourceforge.net/forum/forum.php?forum_id=654766'>http://sourceforge.net/forum/forum.php?forum_id=654766</a><br/>
+ If you get errors with another PHP version, this is normal. You must upgrade your PHP install.<br/>
+ <br/>
+Open <a target='_blank' href='/vl/bc.jsp?v=0.0.0.10&m=xx:xx:xx:xx:xx:xx&l=00:00:00:00:00:00&p=00:00:00:00:00:00&h=4'>http://my.domain.com/vl/bc.jsp?v=0.0.0.10&m=xx:xx:xx:xx:xx:xx&l=00:00:00:00:00:00&p=00:00:00:00:00:00&h=4</a><br/>
+You should get a weird text page starting with word 'amber'.<br/>
+If you have nothing or a PHP error, proceed as previously : check your PHP version and eventually ask for support.<br/>
+Note that this call will create a burrow for a dummy bunny : <a target='_blank' href='/vl/burrows/xxxxxxxxxxxx'>http://my.domain.com/vl/burrows/xxxxxxxxxxxx</a><br/>
+<br/>
+Useful OpenNab links :<br/>
+Api demo : <a target='_blank' href='/vl/api_demo/'>http://my.domain.com/vl/api_demo/</a><br/>
+Configs folder : <a target='_blank' href='/vl/config/'>http://my.domain.com/vl/config/</a><br/>
+Main config : <a target='_blank' href='/vl/config/opennab.ini'>http://my.domain.com/vl/config/opennab.ini</a><br/>
+Logs : <a target='_blank' href='/vl/logs/'>http://my.domain.com/vl/logs/</a><br/>
+Burrows : <a target='_blank' href='/vl/burrows/'>http://my.domain.com/vl/burrows/</a><br/>
+TTS tests : <a target='_blank' href='/vl/tests/interactive_test_tts.php'>http://my.domain.com/vl/tests/interactive_test_tts.php</a><br/>
+Plugin system tests : <a target='_blank' href='/vl/tests/index2.php'>http://my.domain.com/vl/tests/index2.php</a><br/>
+
+Nabaztag calls :<br/>
+<a target='_blank' href='/vl/locate.php?sn=xxxxxxxxxxxx&h=4'>http://my.domain.com/vl/locate.php?sn=xxxxxxxxxxxx&h=4</a><br/>
+<a target='_blank' href='/vl/p4.php?sn=xxxxxxxxxxxx&v=65808&st=1&sd=0&tc=0&h=4'>http://my.domain.com/vl/p4.php?sn=xxxxxxxxxxxx&v=65808&st=1&sd=0&tc=0&h=4</a><br/>
+<a target='_blank' href='/vl/p4.php?sn=xxxxxxxxxxxx&v=65808&st=1&sd=0&tc=7fffffff&h=4'>http://my.domain.com/vl/p4.php?sn=xxxxxxxxxxxx&v=65808&st=1&sd=0&tc=7fffffff&h=4</a><br/>
+<a target='_blank' href='/vl/record.php?sn=xxxxxxxxxxxx&v=65808&h=4'>http://my.domain.com/vl/record.php?sn=xxxxxxxxxxxx&v=65808&h=4</a><br/>
+<a target='_blank' href='/vl/rfid.php?sn=xxxxxxxxxxxx&v=65808&h=4&t=d00218bd6e5693fd'>http://my.domain.com/vl/rfid.php?sn=xxxxxxxxxxxx&v=65808&h=4&t=d00218bd6e5693fd</a><br/>
+</html>

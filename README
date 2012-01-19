@@ -1,0 +1,32 @@
+OpenNab is a PHP based proxy framework obtained from http://opennab.sourceforge.net
+
+The following is the steps for OpenNab with TTS plugin installation:
+
+1) Install Apache and PHP5. Follow the steps at Apache.org and php.net.
+2) Download OpenNab with TTS plugin and place its content inside the apache www folder in a folder named "vl".
+3) Give permission to OpenNab to write files in the following folders : /vl/logs, /vl/plugins/*/files, /vl/burrows
+4) Go to http://code.google.com/p/jnabserver/ and download the application folder. Look for bootcode.ini file in the folder and place it to /vl/plugins/saveboot/files.
+5) Make sure Apache AllowOverride setting in httpd.conf is set to All. It is to ensure that a rabbit call to http://my.domain.com/vl/bc.jsp points to /vl/ bc.php of OpenNab.
+
+Easy, that is all you need basically. 
+
+
+Follow the follow steps to test the server.
+
+1. Open a web browser, go to http://my.domain.com/vl/foobar
+- The browser should display : 'ERROR 404 from OpenNab'.
+- Some web browsers (e.g. Internet Explorer might need some changes in configuration options to display the actual error message)
+- If you are getting the error from browser itself or you are not getting the message above, you have an issue with Apache configuration (ErrorDocument feature in .htaccess is not available).
+- Fix this issue before going to further tests.
+
+2. With any webbrowser, go to http://my.domain.com/vl/tests/
+- You should see a green status with all tests passed.
+- If not, you have a PHP errors which you should fix before proceeding. PHP Notices and Warnings should not be a problem but if it is an error make sure you fix them, can be due to permissions. Basically, OpenNab code does not work on your PHP configuration or on the current folder permission setting.
+
+3. With any web-browser, go to http://my.domain.com/vl/bc.jsp?v=0.0.0.10&m=xx:xx:xx:xx:xx:xx&l=00:00:00...
+- You should get a weird text page starting with word 'amber'.
+- If not, it should mostly be due to PHP version. I used PHP 5.3 for the installation. The application website suggests PHP 4 and 5 versions. If you can fix this then you should be all set up. You can then try the demo API using http://my.domain.com/vl/
+
+Thats it, do the wireless configuration for your Nabaz:tag and point it to your server address. The OpenNab server should be working now.
+
+To use TTS feature setup a TTS server using RESTful-TTS, available in GitHub and place the server address in the TTS plugin code.

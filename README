@@ -1,4 +1,11 @@
+:: OpenNab with TTS plugin ::
+
 OpenNab is a PHP based proxy framework obtained from http://opennab.sourceforge.net
+
+Requirements:
+- Any Operating System with PHP Server.
+
+Installation instructions:
 
 The following is the steps for OpenNab with TTS plugin installation:
 

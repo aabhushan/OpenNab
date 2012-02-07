@@ -29,4 +29,4 @@ Follow the follow steps to test the server.
 
 Thats it, do the wireless configuration for your Nabaz:tag and point it to your server address. The OpenNab server should be working now.
 
-To use TTS feature setup a TTS server using RESTful-TTS, available in GitHub and place the server address in the TTS plugin code.
+To use TTS feature setup a TTS server using RESTful-TTS, available in GitHub and place the server address in the TTS server field in the OpenNab.ini file.

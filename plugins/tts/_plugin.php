@@ -30,7 +30,7 @@ class Plugin_tts_media {
     function Plugin_tts_media(&$plugin, $identifier) {
         $this->plugin = &$plugin;
         $this->text = $identifier;
-        $speech = file_get_contents('http://192.168.2.84/tts/converter/' . str_replace(" ", "+",$this->text));
+        $speech = file_get_contents( TTS_SERVER . str_replace(" ", "+",$this->text));
         $tempFilename = utils::randomString(10);
         $filePath = $_SERVER['DOCUMENT_ROOT'] . '/vl/temp/' . $tempFilename . '.mp3';
         file_put_contents($filePath, $speech);
@@ -42,7 +42,6 @@ class Plugin_tts_media {
     }
 
     function SendTo(&$burrow, &$apiReply) {
-        addToLog('I AM AT SEND TO',3);
         $this->plugin->SetData($burrow, 'tts', $this->text);
         $apiReply->Add('TTS ' . $this->type, $this->text);
         addToLog('tts: registering new message to play ' . $this->fileId, 3);
